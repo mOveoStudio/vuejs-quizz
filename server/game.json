@@ -1,0 +1,45 @@
+{
+  "gameId": 55666,
+  "nbQuestions": 20,
+  "categories": [
+    "Fais mousser ta culture bière",
+    "Culture inutile (mais marrante)",
+    "Manger, c'est ta vie",
+    "Un petit défi de l'apéro"
+  ],
+  "questions": [
+    {
+      "index": 0,
+      "questionId": 1,
+      "category": 0,
+      "time": 30,
+      "score": 100,
+      "timeBonusMultiplier": 0.6,
+      "type": "choices",
+      "data": {
+        "label": "C'est quoi cette chose ?",
+        "image": "http://localhost:8181/images/question01.jpg",
+        "choices": [
+          "Du malt",
+          "De la levure",
+          "Du houblon",
+          "La sueur du brasseur"
+        ],
+        "answer": 1
+      }
+    },
+    {
+      "index": 1,
+      "questionId": 2,
+      "category": 2,
+      "time": 60,
+      "score": 100,
+      "timeBonusMultiplier": 0.6,
+      "type": "challenge",
+      "data": {
+        "label": "Un membre de l’équipe prononce à haute voix, 3 fois successivement et sans erreur cette phrase :\n«Tous mes potes se lèvent et lèchent le pot de Potjevlesch» !",
+        "image": "http://localhost:8181/images/question01.jpg"
+      }
+    }
+  ]
+}

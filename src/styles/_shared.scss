@@ -1,0 +1,104 @@
+// HELPERS
+//-----------------------------
+.text--orange {
+  color: $color-orange;
+}
+
+// MODELS
+//-----------------------------
+%category-title {
+  font-family: $font-condensed;
+  background-color: $color-theme;
+  color: $color-theme-dark;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  @include font-size(24);
+  font-weight: 700;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+
+// BUTTONS
+//-----------------------------
+.button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: $font-condensed;
+  font-weight: 700;
+  letter-spacing: 2px;
+  @include font-size(24);
+  color: $color-theme;
+  background-color: transparent;
+  border: 2px solid $color-theme;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: lightgrey;
+}
+
+.button__bottom-group {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba($color-theme-dark, 1);
+}
+
+.button__bottom-group .button {
+  background-size: cover;
+  background-position: 50%;
+}
+
+// ANIMATIONS TRANSITIONS
+//-----------------------------
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.bounce-enter-active, .bounce-leave-active {
+  transition: transform 0.3s $ease-bounce, opacity 0.4s;
+  transform: scale(1);
+}
+
+.bounce-enter, .bounce-leave-to {
+  transition: none;
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.slide-down-enter-active, .slide-down-leave-active {
+  transition: transform 0.2s;
+  transition-delay: 0.6s;
+  transform: translateY(0);
+}
+
+.slide-down-enter, .slide-down-leave-to {
+  transition-delay: 0s;
+  transform: translateY(100%);
+}
+
+.page-enter-active, .page-leave-active {
+  transition-property: opacity;
+  transition-duration: .15s;
+}
+
+.page-enter-active {
+  transition-delay: .15s;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+

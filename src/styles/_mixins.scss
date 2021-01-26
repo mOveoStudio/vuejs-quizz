@@ -1,0 +1,38 @@
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+// Responsive
+// ==================
+@mixin up($size) {
+  $size: strip-unit($size);
+  @media (min-width: $size * 1px) {
+    @content;
+  }
+}
+
+@mixin down($size) {
+  $size: strip-unit($size);
+  @media (max-width: $size * 1px) {
+    @content;
+  }
+}
+
+$root-sizes: (
+        "normal": $default-font-size,
+        "medium": 16,
+        "small": 14,
+) !default;
+
+
+@mixin root-size($size: "normal") {
+  font-size: map-get($root-sizes, $size) / 16 * 100%;
+}
+
+@mixin font-size($fontsize) {
+  font-size: #{$fontsize / $default-font-size}rem;
+}

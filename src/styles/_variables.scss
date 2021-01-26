@@ -1,0 +1,25 @@
+$default-font-size: 16;
+
+@function calc-rem($size) {
+  $size: strip-unit($size);
+  @return #{$size / 16}rem;
+}
+
+$color-orange: #ff6048;
+$color-dark: #1d1d1b;
+$color-cream: #b29065;
+$color-cream-light: #D9BF9E;
+$color-theme: #FFDF6C;
+$color-theme-secondary: #707070;
+$color-theme-dark: #202020;
+
+$font-text: 'Open Sans', sans-serif;
+$font-clock: 'AlarmClock', sans-serif;
+$font-condensed: "Amatic SC", sans-serif;
+
+$font-bold: 700;
+
+// EASING ANIMATIONS
+//-----------------------------
+$ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-quad: cubic-bezier(0.165, 0.84, 0.44, 1);
