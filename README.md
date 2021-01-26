@@ -1,4 +1,4 @@
-# 3brasseurs_quizz
+# VueJS Quizz
 
 ## Project setup
 ```
