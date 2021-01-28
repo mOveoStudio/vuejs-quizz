@@ -3,6 +3,12 @@ Projet de quizz avec VueJS.
 
 ## Installer le projet et ses dépendances
 ```
+git clone https://github.com/mOveoStudio/vuejs-quizz.git demo-quizz-folder
+```
+```
+cd demo-quizz-folder
+```
+```
 yarn install
 ```
 
