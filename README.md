@@ -1,24 +1,19 @@
-# VueJS Quizz
+# mOveo Quizz
+Projet sous VueJS
 
-## Project setup
+### Installer le projet et ses dépendances
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Lancer le serveur front
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Lancer le serveur API
+Simple serveur php qui renvoie le contenu du fichier `server/game.json` 
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+yarn php
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
